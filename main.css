@@ -417,7 +417,7 @@ li{
 
 /*Start contact*/
 .contact{
-    background:linear-gradient(to top, #164900, black);
+    background:linear-gradient(to bottom, #164900, black);
 }
 
 form{
@@ -461,7 +461,7 @@ input[type="submit"]:hover{
     width: 100%;
     text-align: center;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    background-color: #16162d;
+    background-color: black;
     padding: 2rem 0;
     position: relative;
 }
