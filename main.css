@@ -14,7 +14,7 @@ html{
 body{
     width: 100%;
     height: 100%;
-    background: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("images/sitebg1.jpg") no-repeat center fixed;
+    background: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("sitebg1.jpg") no-repeat center fixed;
     background-size: cover;
     min-height: 100%;
 }
@@ -510,7 +510,7 @@ input[type="submit"]:hover{
     body {
         width: 100%;
         height: 100%;
-        background: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("images/sitebg1.jpg") no-repeat center fixed;
+        background: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("sitebg1.jpg") no-repeat center fixed;
         background-size: cover;
         min-height: 100%;
     }
