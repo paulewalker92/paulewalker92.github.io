@@ -16,6 +16,7 @@ body{
     height: 100%;
     background: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("sitebg1.jpg") no-repeat center fixed;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 section{
@@ -509,6 +510,7 @@ input[type="submit"]:hover{
     body {
         background: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("sitebg1.jpg") no-repeat center fixed;
         background-size: cover;
+        overflow-x: hidden;
     }
 
     .landing-text h1 {
@@ -627,11 +629,6 @@ input[type="submit"]:hover{
 }
 
 @media screen and (min-width: 300px) {
-    body {
-        background: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("sitebg1.jpg") no-repeat center fixed;
-        background-size: cover;
-    }
-
     .top-nav{
         width: 100%;
         height: 100%;
