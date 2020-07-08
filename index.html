@@ -2,265 +2,176 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="menu-toggler">
-            <div class="bar half start"></div>
-            <div class="bar"></div>
-            <div class="bar half end"></div>
-        </div>
-        <nav class="top-nav">
-            <ul class="nav-list">
+    <header id="header">
+        <nav id="navbar">
+            <ul>
                 <li>
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a class="navlink" href="#">About</a>
                 </li>
                 <li>
-                    <a href="#about" class="nav-link">About</a>
+                    <a class="navlink" href="#">Projects</a>
                 </li>
-                <!--<li>
-                    <a href="#services" class="nav-link">Services</a>
-                </li>-->
                 <li>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a class="navlink" href="#">Contact</a>
                 </li>
-                <!--<li>
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>-->
-                <li>
-                    <a href="#education" class="nav-link">Education</a>
-                </li>
-                <!--<li>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>-->
             </ul>
         </nav>
-        <div class="landing-text">
-                <h1>Paul Walker</h1>
-                <h6>Computer Science Graduate</h6>
-            </div>
+
+        <div class="banner" id="welcome-section">
+            <h1>Paul Walker</h1>
+            <h6>Computer Science Graduate</h6>
         </div>
     </header>
 
-    <section class="about" id="about">
-        <div class="container">
-            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-                <img src="images/profile1.jpg" alt="">
+    <main>
+        <section class="about" id="about">
+            <div class="section-heading">
+                <h1>About</h1>
             </div>
-            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+            <div class="about-container">
+            <div class="profile-img">
+                <img src="img/me.jpg" alt="">
+            </div>
+            <div class="about-details">
                 <div class="about-heading">
-                    <h1>About</h1>
-                    <h6>Myself</h6>
+                    <h2>Introduction</h2>
                 </div>
                 <p>
-                    Computer Science honours graduate with a strong background in related fields providing a foundation for roles in database management and web/application development.
-                    With generally high grades during higher education, I have proven I can dedicate to the task and efficiently manage projects while working cooperatively with others.
-                </p>
-                <div class="social-media">
-                    <ul class="nav-list">
-                        <li>
-                            <a href="https://www.linkedin.com/in/paul-walker-33476518a/" class="icon-link"><i class="fab fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/ccx92" class="icon-link"> <i class="fab fa-github-square"></i></a>
-                        </li>
-                    </ul>
-                </div>
+                    Hello, I'm Paul Walker, a computing enthusist with an interest in several areas of the industry ranging from web design/development and database management to technical support and security. Growing up with computers around me was a big inspiration to how I reached where I am today.</p>
+                    <p>Studing HND Technical Support at Dumfries & Galloway College before heading to the University of the South West Scotland to obtain an honours degree in Computer Science has gave me a great insight into the these fields and I'm excited to gain some industry experience.</p>
+                    <p>With generally high grades during higher education, I have proven I can dedicate to the task and efficiently manage projects while working cooperatively with others.
+                    </p>
             </div>
         </div>
-    </section>
+        </section>
 
-    <!--<section class="services" id="services">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Services</h1>
-                <h6>What I can do for you</h6>
-            </div>
-            <div class="my-skills">
-                <div class="skill" data-aos="fade-in" data-aos-delay="300">
-                    <div class="icon-container">
-                        <i class="fas fa-code">
-                        </i>
-                    </div>
-                    <h1>Web Development</h1>
-                    <p>
-                        During my studies I have learned to develop websites and applications from ground up using the main development languages HTML5, CSS3 and JavaScript
-                        along with experience using the .NET Framework to using simple web builder software.
-                    </p>
-                </div>
-                <div class="skill" data-aos="fade-in" data-aos-delay="600">
-                    <div class="icon-container">
-                        <i class="fas fa-layer-group">
-                        </i>
-                    </div>
-                    <h1>Web Design</h1>
-                    <p>
-                        With the increasing variance of devices, web design techniques have never been more vital. Using responsive methods such as flexbox and CSS grid,
-                        applications can now appear as they should regardless of the device.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-    <section class="portfolio" id="portfolio">
-        <div class="container">
+        <section class="projects" id="projects">
             <div class="section-heading">
                 <h1>Portfolio</h1>
                 <h6>View some of my recent work</h6>
             </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                    <img src="images/project1.JPG" alt="">
-                </div>
-                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
-                    <h6>Computer Science Honours Project</h6>
-                    <h1>Comparing ASP.NET and Web Builder Development Methods</h1>
-                    <p>
-                        This project was to compare web builder software against the .NET Framework to discover key differences in web development methods.
-                        This was done by performing research into existing information on both to gain a ground basis of the main differences before planning and building websites using both approaches.
-                    </p>
-                    <a href="https://drive.google.com/file/d/1sO4XRPKJ4nNeJP18cqUl-7SC6CtzngOj/view?usp=sharing" class="cta">View Documentation</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="900">
-                    <img src="images/project2.jpg" alt="">
-                </div>
-                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1200">
-                    <h6>Mobile Web Application</h6>
-                    <h1>Old School RuneScape Companion App</h1>
-                    <p>
-                        This project was to build a companion web application for an online MMORPG which would act as a convenient go-to place for information.
-                        The application held several webpages designed in a uniformed style to show relevance to the MMORPG.
-                    </p>
-                    <a href="https://drive.google.com/file/d/155wnjddwHs0oDYNrds-mZ6EU5QiluLQH/view?usp=sharing" class="cta">View Documentation</a>
-                    <br>
-                    <a href="https://github.com/ccx92/OSRS-Companion-App" class="cta">View Code Files</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1500">
-                    <img src="images/tempimg.jpg" alt="">
-                </div>
-                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">
-                    <h6>Web Application</h6>
-                    <h1>SmartBrain Website</h1>
-                    <p>
-                        This project is an image recognition application that I'm building while studying a web development course on Udemy.
-                    </p>
-                    <!--<a href="#" class="cta">View Details</a>-->
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="education" id="education">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Education</h1>
-                <h6>Past places of study</h6>
+            <div class="project-tile">
+                <div class="project-img">
+                    <img src="img/project1.JPG" alt="">
+                </div>
+                <div class="project-description">
+                        <h6>Computer Science Honours Project</h6>
+                        <hr></hr>
+                        <h1>Comparing ASP.NET and Web Builder Development Methods</h1>
+                        <p>
+                            This project was to compare web builder software against the .NET Framework to discover key differences in web development methods. This was done by performing research into existing information on both to gain a ground basis of the main differences before planning and building websites using both approaches.
+                        </p>
+                        <p>
+                            For the practical comparison, I attempted to build a blog website based on a simple design using a web builder (WiX) and a website close as possible using C#, SQL in Visual Studio.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1sO4XRPKJ4nNeJP18cqUl-7SC6CtzngOj/view?usp=sharing" class="project-link">View Documentation</a>
+                </div>
             </div>
-            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
-                <ul>
-                    <li class="date" data-date="2016 - 2019">
-                        <h1>University of the West of Scotland</h1>
-                        <p>
-                            Computer Science – BSc (Hons) 1.1
-                        </p>
-                    </li>
-                    <li class="date" data-date="2010 - 2016">
-                        <h1>Dumfries & Galloway College</h1>
-                        <p>
-                            Higher National Diploma in Computing (Technical Support) – C
-                        </p>
-                    </li>
-                    <li class="date" data-date="2004 - 2010">
-                        <h1>Lockerbie Academy</h1>
-                        <p>
-                            ECDL Award<br>
-                            Intermediate 1 English & Maths (CC)<br>
-                            Standard Grade Computing Studies (3), 4 additional Standard Grades at C or above
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
-    <!--<section class="experience" id="experience">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Work Experience</h1>
-                <h6>Past and current jobs</h6>
+            <div class="project-tile">
+                <div class="project-img">
+                    <img src="img/project2.jpg" alt="">
+                </div>
+                <div class="project-description">
+                        <h6>Mobile Web Application</h6>
+                        <hr></hr>
+                        <h1>Mobile Companion Application</h1>
+                        <p>
+                            A project for my Advanced Mobile Programming module in university, my goal was to build a companion web application for an online MMORPG which would act as a convenient go-to place for information. The application held several webpages designed in a uniformed style to show relevance to the MMORPG.
+                        </p>
+                        <p>
+                            The application was only optimised for use on mobiles and thus isn't designed for use on a desktop/laptop screen. Besides the HTML and CSS used to customise the layout, it also includes some limited JavaScript functionality used to enable the Firebase features.
+                        </p>
+                        <a href="https://drive.google.com/file/d/155wnjddwHs0oDYNrds-mZ6EU5QiluLQH/view?usp=sharing" class="project-link">View Documentation</a>
+                        <br>
+                        <a href="https://github.com/ccx92/OSRS-Companion-App" class="project-link">View Code Files</a>
+                </div>
             </div>
-            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
-                <ul>
-                    <li class="date" data-date="2011 - Present">
-                        <h1>Google</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam vel itaque nobis nemo.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam vel itaque nobis nemo.
-                        </p>
-                    </li>
-                    <li class="date" data-date="2008 - 2011">
-                        <h1>Facebook</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam vel itaque nobis nemo.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam vel itaque nobis nemo.
-                        </p>
-                    </li>
-                    <li class="date" data-date="2002 - 2007">
-                        <h1>Microsoft</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam vel itaque nobis nemo.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam vel itaque nobis nemo.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>-->
 
-    <!--<section class="contact" id="contact">
-        <div class="container">
+            <div class="project-tile">
+                <div class="project-img">
+                    <img src="img/techdocpage.JPG" alt="">
+                </div>
+                <div class="project-description">
+                        <h6>freecodecamp Project</h6>
+                        <hr></hr>
+                        <h1>Technical Documentation Page</h1>
+                        <p>
+                            This is a project I built using Visual Studio Code for my Responsive Web Design certificate.
+                        </p>
+                        <p>This project focused on creating a more responsive layout for devices while ensuring the design is simple and viewable for users regardless of their device. </p>
+                        <a href="https://github.com/ccx92/OSRS-Companion-App" class="project-link">View Code Files</a>
+                </div>
+            </div>
+
+            <div class="project-tile">
+                <div class="project-img">
+                    <img src="img/surveypage.JPG" alt="">
+                </div>
+                <div class="project-description">
+                        <h6>freecodecamp Project</h6>
+                        <hr></hr>
+                        <h1>Survey Form</h1>
+                        <p>
+                            This is one of the five projects I built using Visual Studio Code for my Responsive Web Design certificate.
+                        </p>
+                        <p>This project focused mainly on the use of forms and how to ensure user validation is in place for a functional yet visually appealing web page.</p>
+                        <a href="https://github.com/ccx92/OSRS-Companion-App" class="project-link">View Code Files</a>
+                </div>
+            </div>
+            <div class="portfolio-link">
+            <a href="#">View All</a>
+        </div>
+        </section>
+
+        <section class="contact" id="contact">
             <div class="section-heading">
                 <h1>Contact</h1>
-                <h6>Let's work together</h6>
             </div>
-            <form action="" data-aos="fade-up" data-aos-delay="300">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <label for="service">Services:</label>
-                <select name="services" id="service">
-                    <option value="">Computer Science</option>
-                    <option value="">Mobile Web Development</option>
-                    <option value="">Web Development</option>
-                </select>
-                <label for="subject">Subject:</label>
-                <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </section>-->
+            <div class="contact-container">
+                <div class="profile-img">
+                    <img src="img/sitebg.jpg" alt="">
+                </div>
+                <div class="contact-details">
+                    <div class="contact-heading">
+                        <h2>Let's Work Together</h2>
+                    </div>
+                    <p>
+                    If you're interesting in working with me or wish to learn more, please view the below links for my LinkedIn, GitHub and CodePen. You can also take a look at my CV and some project documentation on my Google Drive.
+                    </p>
+                        <div class="social-media">
+                            <ul class="nav-list">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/paul-walker-33476518a/" class="profile-link"><i class="fab fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/ccx92" class="profile-link"> <i class="fab fa-github-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="profile-link"><i class="fab fa-codepen"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="profile-link"> <i class="fab fa-google-drive"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
-    <footer class="copyright">
-        <div class="up" id="up">
-            <i class="fas fa-chevron-up"></i>
+        <footer class="copyright">
+            <div class="footer-container">
+            <p>&copy; 2020 Paul Walker</p>
         </div>
-        <p>&copy; 2019 Paul Walker</p>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="main.js"></script>
+        </footer>
+    </main>
 </body>
 </html>
