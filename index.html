@@ -13,13 +13,17 @@
         <nav id="navbar">
             <ul>
                 <li>
-                    <a class="navlink" href="#">About</a>
+                    <a class="navlink" href="#">Home</a>
+                </li>
+                <vl></vl>
+                <li>
+                    <a class="navlink" href="#about">About</a>
                 </li>
                 <li>
-                    <a class="navlink" href="#">Projects</a>
+                    <a class="navlink" href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a class="navlink" href="#">Contact</a>
+                    <a class="navlink" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -54,10 +58,9 @@
 
         <section class="projects" id="projects">
             <div class="section-heading">
-                <h1>Portfolio</h1>
-                <h6>View some of my recent work</h6>
+                <h1>Portfolio Highlights</h1>
             </div>
-
+            <div class="project-container">
             <div class="project-tile">
                 <div class="project-img">
                     <img src="img/project1.JPG" alt="">
@@ -72,64 +75,94 @@
                         <p>
                             For the practical comparison, I attempted to build a blog website based on a simple design using a web builder (WiX) and a website close as possible using C#, SQL in Visual Studio.
                         </p>
-                        <a href="https://drive.google.com/file/d/1sO4XRPKJ4nNeJP18cqUl-7SC6CtzngOj/view?usp=sharing" class="project-link">View Documentation</a>
+                        <div class="social-media">
+                            <ul class="nav-list">
+                                <li>
+                                    <a href="https://drive.google.com/file/d/1sO4XRPKJ4nNeJP18cqUl-7SC6CtzngOj/view?usp=sharing" class="profile-link"> <i class="fab fa-google-drive"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project-tile">
+                <div class="project-tile">
+                    <div class="project-img">
+                        <img src="img/project2.jpg" alt="">
+                    </div>
+                    <div class="project-description">
+                            <h6>Advanced Programming for Mobile Devices</h6>
+                            <hr></hr>
+                            <h1>Mobile Companion Application</h1>
+                            <p>
+                                A project for my Advanced Mobile Programming module in university, my goal was to build a companion web application for an online MMORPG which would act as a convenient go-to place for information. The application held several webpages designed in a uniformed style to show relevance to the MMORPG.
+                            </p>
+                            <p>
+                                The application was only optimised for use on mobiles and thus isn't designed for use on a desktop/laptop screen. Besides the HTML and CSS used to customise the layout, it also includes some limited JavaScript functionality used to enable the Firebase features.
+                            </p>
+                            <div class="social-media">
+                                <ul class="nav-list">
+                                    <li>
+                                        <a href="https://drive.google.com/file/d/155wnjddwHs0oDYNrds-mZ6EU5QiluLQH/view?usp=sharing" class="profile-link"> <i class="fab fa-google-drive"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/ccx92/OSRS-Companion-App" class="profile-link"> <i class="fab fa-github-square"></i></a>
+                                    </li>                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+            <div class="project-tile">     
                 <div class="project-img">
-                    <img src="img/project2.jpg" alt="">
+                    <img src="img/project5.JPG" alt="">
                 </div>
                 <div class="project-description">
-                        <h6>Mobile Web Application</h6>
+                        <h6>Responsive Web Design</h6>
                         <hr></hr>
-                        <h1>Mobile Companion Application</h1>
+                        <h1>Portfolio Webpage</h1>
                         <p>
-                            A project for my Advanced Mobile Programming module in university, my goal was to build a companion web application for an online MMORPG which would act as a convenient go-to place for information. The application held several webpages designed in a uniformed style to show relevance to the MMORPG.
+                            This project is the front page of this website which was my final project for my freecodecamp Responsive Web Design certificate.
                         </p>
                         <p>
-                            The application was only optimised for use on mobiles and thus isn't designed for use on a desktop/laptop screen. Besides the HTML and CSS used to customise the layout, it also includes some limited JavaScript functionality used to enable the Firebase features.
+                            To develop this, I took inspiration from other designs and took into consideration the requirements of the project brief. The webpage is entirely made-up from HTML and CSS using techniques I learned while studying the module and from other experience.
                         </p>
-                        <a href="https://drive.google.com/file/d/155wnjddwHs0oDYNrds-mZ6EU5QiluLQH/view?usp=sharing" class="project-link">View Documentation</a>
-                        <br>
-                        <a href="https://github.com/ccx92/OSRS-Companion-App" class="project-link">View Code Files</a>
+                        <div class="social-media">
+                            <ul class="nav-list">
+                                <li>
+                                    <a href="https://codepen.io/paulw92/pen/MWKGKxZ" class="profile-link"><i class="fab fa-codepen"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project-tile">
-                <div class="project-img">
-                    <img src="img/techdocpage.JPG" alt="">
-                </div>
-                <div class="project-description">
-                        <h6>freecodecamp Project</h6>
-                        <hr></hr>
-                        <h1>Technical Documentation Page</h1>
-                        <p>
-                            This is a project I built using Visual Studio Code for my Responsive Web Design certificate.
-                        </p>
-                        <p>This project focused on creating a more responsive layout for devices while ensuring the design is simple and viewable for users regardless of their device. </p>
-                        <a href="https://codepen.io/paulw92/pen/OJMjbZp" class="project-link">View Code Files</a>
-                </div>
-            </div>
-
-            <div class="project-tile">
-                <div class="project-img">
-                    <img src="img/surveypage.JPG" alt="">
-                </div>
-                <div class="project-description">
-                        <h6>freecodecamp Project</h6>
-                        <hr></hr>
-                        <h1>Survey Form</h1>
-                        <p>
-                            This is one of the five projects I built using Visual Studio Code for my Responsive Web Design certificate.
-                        </p>
-                        <p>This project focused mainly on the use of forms and how to ensure user validation is in place for a functional yet visually appealing web page.</p>
-                        <a href="https://codepen.io/paulw92/pen/RwrrMOM" class="project-link">View Code Files</a>
-                </div>
+                <div class="project-tile">
+                    <div class="project-img">
+                        <img src="img/techdocpage.JPG" alt="">
+                    </div>
+                    <div class="project-description">
+                            <h6>freecodecamp Project</h6>
+                            <hr></hr>
+                            <h1>Technical Documentation Page</h1>
+                            <p>
+                                This is a project I built using Visual Studio Code for my Responsive Web Design certificate.
+                            </p>
+                            <p>
+                                This project focused on creating a more responsive layout for devices while ensuring the design is simple and viewable for users regardless of their device. 
+                            </p>
+                            <div class="social-media">
+                                <ul class="nav-list">
+                                    <li>
+                                        <a href="https://codepen.io/paulw92/pen/OJMjbZp" class="profile-link"><i class="fab fa-codepen"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
             </div>
             <div class="portfolio-link">
-            <a href="https://codepen.io/collection/nYJLoJ">View All on CodePen</a>
-        </div>
+                <a href="projects.html">View All Projects</a>
+            </div>
         </section>
 
         <section class="contact" id="contact">
@@ -159,7 +192,7 @@
                                     <a href="https://codepen.io/collection/nYJLoJ" class="profile-link"><i class="fab fa-codepen"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://drive.google.com/drive/folders/1fKo4tSxdVqqh4-mzrNHPtgG9Aw7aTX4c?usp=sharing" class="profile-link"> <i class="fab fa-google-drive"></i></a>
+                                    <a href="https://drive.google.com/drive/folders/1NNSARBa3UBC_g42Fafn9zB5aJYewPeMa?usp=sharing" class="profile-link"> <i class="fab fa-google-drive"></i></a>
                                 </li>
                             </ul>
                         </div>
