@@ -3,833 +3,438 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Paul Walker | Personal Portfolio</title>
+        <title>Portfolio Website-Paul</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/fontawesome.css">      
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">   
+        <!-- bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+        <!-- linking css file -->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!--Navbar Section-->
-        <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
             <div class="container">
-              <a class="navbar-brand" href="#">
-                  <!--img src="images/spider.png" alt="logo image"-->
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#services">Skills</a>
-                  </li>
-                  <!--li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
-                  </li-->
-                  <li class="nav-item">
-                    <a class="nav-link" href="#faq">Qualifications</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                
-                </ul>
-                <!--Enables the phone number button-->
-                <!--button type="button" class="rounded-pill btn-rounded">07477 668935
-                    <span>
-                        <i class="fas fa-phone-alt"></i>
-                    </span>
-                </button-->
-              </div>
+                <a class="navbar-brand" href="#">Paul Walker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-        
-        <!--Intro Section-->
-        <section id="home" class="intro-section">
-            <div class="container">
-                <div class="row align-items-center text-white">
-                    <!--START THE CONTENT FOR THE INTRO-->
-                    <div class="col-md-6 intros">
-                        <h1 class="display-2">
-                            <span class="display-2--intro">Paul Walker</span>
-                            <span class="display-2--description lh-base">
-                                Computer Science Graduate
-                            </span>
-                        </h1>
-                        <button type="button" class="rounded-pill btn-rounded">Get in Touch
-                          <a href="#contact">
-                            <span>
-                                <i class="fas fa-arrow-right"></i>
-                            </span>
-                          </a>
-                        </button>
+        </nav>
+
+        <!-- main banner -->
+        <section class="bgimage" id="home">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                        <h2 class="hero_title">Paul Walker</h2>
+                        <p class="hero_desc">Computer Science graduate with an enthusium for IT</p>
                     </div>
-                    <!--START THE CONTENT FOR THE VIDEO-->
-                    <div class="col-md-6 intros text-end">
-                        <div class="video-box">
-                          <!--client picture-->
-                            <div class="testimonials__picture">
-                              <img src="images/testimonials/client-2 - Copy.jpg" alt="client-1 picture" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- about section-->
+        <section id="about">
+            <div class="container mt-4 pt-4">
+                <h1 class="text-center">About Me</h1>
+                <div class="row mt-4">
+                    <div class="col-lg-4">
+                        <img src="images/about.jpg" class="imageAboutPage" alt="">
+                    </div>
+
+                    <div class="col-lg-8" style="background-color:#222222;color: white;">
+                        <p style="padding-top: 20px">Welcome to my portfolio website! Below you can learn a basic overview and summary of who I am, my interests and goals. If you'd like to learn more, please view the relevant sections for more information.
+                        </p>
+                        
+                        <!-- Made text in bullet points bold -->
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><b>Name:</b> Paul Walker</li>
+                                    <li><b>Age:</b> 30</li>
+                                    <li><b>Occupation:</b> N/A (Employment break for studies)</li>
+                                </ul>
                             </div>
-                            <!--<img src="images/art/intro-section-illustration2-removebg-preview.png" alt="video illustration" class="img-fluid">-->
-                            <!--a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
-                                <span>
-                                    <i class="fas fa-play-circle"></i>
-                                </span>
-                                <span class="border-animation border-animation--border-1"></span>
-                                <span class="border-animation border-animation--border-2"></span>
-                            </a>-->
+
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><b>Previous Occupation:</b> Web & Database Developer</li>
+                                    <li><b>Highest Qualification:</b> Honours Degree</li>
+                                    <li><b>Location:</b> Scotland, UK</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <p>To offer a summary of myself, my name is Paul Walker, an IT enthusist located in South West Scotland. I've spend much of my life surrounded by computers and technology which therefore encourged me to puruse a career in the IT industry. To aid in this, I attended Dumfries & Galloway College and studied for a Higher National Diplomia in IT to build upon experience I had learned during my own time in technical support aspects. I then attended University of South West Scotland in Dumfries to study an Honours Degree in Computing Science graduating in late 2019. Both my areas of education have given me insights in various areas of IT and I'm excited to gain work experience to decide which aspect is the best fit for me.</p>
+                            <p>To gain some more experience in technical support, I volunteered with Lead Scotland to act as Digital Skills Mentor which was aimed at supporting vulnerable individuals to help setup various devices such as tablets and laptops to improve their confidence in a growing digital world. I also volunteered at Apex Scotland to gain work experience in web development before finally gaining employment with them. During my time with Apex Scotland I built on my web development skills while being introduced to the world of Salesforce and have since been studying to gain an administration credential.</p> 
+                            <p>Beyond this I'm still interested in various aspects of IT and currently looking for opportunities to broaden my experience.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-        </section>
-        <section class="tempSection">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,181.3C384,160,480,128,576,138.7C672,149,768,203,864,213.3C960,224,1056,192,1152,197.3C1248,203,1344,245,1392,266.7L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-          </svg>
-        </section>
-        <!--Companies Section-->
-        <section id="companies" class="companies">
-          
-          <div class="container">
-            <div class="row text-center">
-              <h4 class="fw-bold lead-mb-3">Experience with companies</h4>
-              <div class="heading-line mb-5"></div>
-            </div>
-          </div>
-          <!--START THE COMPANIES CONTENT-->
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 col-lg-4">
-                <a class="nav-link active" aria-current="page" href="https://www.projectscotland.co.uk/">
-                  <div class="companies__logo-box shadow-sm">
-                    <img src="images/companies/company-1.png" alt="Company 1 logo" title="Company 1 logo" class="img-fluid">
-                </div>
-                </a>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <a class="nav-link active" aria-current="page" href="https://www.apexscotland.org.uk/">
-                  <div class="companies__logo-box shadow-sm">
-                    <img src="images/companies/company-2.png" alt="Company 2 logo" title="Company 2 logo" class="img-fluid">
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <a class="nav-link active" aria-current="page" href="https://www.lead.org.uk/">
-                  <div class="companies__logo-box shadow-sm">
-                    <img src="images/companies/company-3.png" alt="Company 3 logo" title="Company 3 logo" class="img-fluid">
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
         </section>
 
-        <!--Services Section-->
-        <section id="services" class="services">
-          <div class="container">
-            <div class="row text-center">
-              <h1 class="display-3 fw-bold">Skills</h1>
-              <div class="heading-line mb-1"></div>
-            </div>
-          
-
-        <!--START THE DESCRIPTION CONTENT-->
-        
-          <!--div class="row pt-2 pb-2 mt-0 mb-3">
-            <div class="col-md-6 border-right">
-              <div class="bg-white p-3">
-                <h2 class="fw-bold text-capitalize text-center">
-                  Gathered during education in college and university alongside my own personal experience.
-                </h2>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="bg-white p-4 text-start">
-                <p class="fw-light">
-                  Hello, I'm Paul Walker a volunteer web developer and recent university graduate. During my education and personal experience, I've covered various areas of the IT industry and able to provide various services some of which are highlighted below:
-                </p>
-              </div>
-            </div>
-          </div>
-        </div-->
-
-        <!--START THE CONTENT FOR THE SERVICES-->
-        <div class="container">
-          <!--START THE WEB DEVELOPMENT CONTENT-->
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-              <div class="services__content">
-                <div class="icon d-block fas fa-code"></div>
-                <h3 class="display-3--title mt-1">Web Development</h3>
-                <p class="lh-lg">
-                  Having an interest in web design and development, I studied HTML & JavaScript during university plus CSS in my own time via freeCodeCamp, YouTube and Udemy courses. This experience helps me in utilising these front-end languages to create efficent, functional and stylish solutions.
-                </p>
-                <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
-                  <span>
-                      <i class="fas fa-arrow-right"></i>
-                  </span>
-              </button>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-              <div class="services__pic">
-                <img src="images/services/services-illustration-2.png" alt="web development illustration" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <!--START THE TECH SUPPORT CONTENT-->
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-              <div class="services__content">
-                <div class="icon d-block fas fa-laptop-medical"></div>
-                <h3 class="display-3--title mt-1">Technical Support</h3>
-                <p class="lh-lg">
-                  Growing up with computers I naturally gained an interest in finding out how they work and how to fix them. During college I studied a Higher National Diploma in IT Technical Support which combined with my own personal experience allows me to diagnoise and troubleshoot software & hardware problems. I'm also able to perform both hardware & software upgrades on a range of devices.
-                </p>
-                <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
-                  <span>
-                      <i class="fas fa-arrow-right"></i>
-                  </span>
-              </button>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-              <div class="services__pic">
-                <img src="images/services/services-illustration-1.png" alt="technical support illustration" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <!--START THE DIGITAL SKILLS CONTENT-->
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-              <div class="services__content">
-                <div class="icon d-block fas fa-chalkboard-teacher"></div>
-                <h3 class="display-3--title mt-1">Digital Skills</h3>
-                <p class="lh-lg">
-                  Linked to my other skills, I've gained experience of software and services in the digital world which has given me the ability to educate others in these areas. Being a former Volunteer Digital Skills Mentor along side my own prior experience, I'm able to teach various grades of digital skills anywhere from inital device configuration and using software applications to helping people safe while using the internet while allowing them to make most of the powerful devices and services available today.
-                </p>
-                <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
-                  <span>
-                      <i class="fas fa-arrow-right"></i>
-                  </span>
-              </button>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-              <div class="services__pic">
-                <img src="images/services/services-illustration-3.png" alt="digital skills illustration" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>    
-        </section>
-
-        <!--Testimonals Section-->
-      <!--<section id="testimonials" class="testimonials">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#fff" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,138.7C560,117,640,107,720,117.3C800,128,880,160,960,170.7C1040,181,1120,171,1200,176C1280,181,1360,203,1400,213.3L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
-          </svg>
-          <div class="container">
-            <div class="row text-center text-white">
-              <h1 class="display-3 fw-bold">Testimonials</h1>
-              <hr style="width: 100px; height: 3px;" class="mx-auto">
-              <p class="lead pt-1">what our clients are saying</p>  
-            </div>
-            <!--START THE CAROUSEL CONTENT-->
-            <!--<div class="row align-items-center">
-              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <!--CAROUSEL ITEM 1-->
-                  <!--<div class="carousel-item active">
-                    <!--testimonials card-->
-                    <!--<div class="testimonials__card">
-                      <p class="lh-lg">
-                        <i class="fas fa-quote-left"></i>
-                        Having an interest in web design and development, I studied HTML & JavaScript during university plus CSS in my own time via freeCodeCamp, YouTube and Udemy courses.
-                        <i class="fas fa-quote-right"></i>
-                        <div class="ratings p-1">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
+        <!-- services section -->
+        <section id="skills">
+            <div class="container">
+                <h1 class="text-center">Skills</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="fas servicesIcon fa-clock"></i>
+                                <h4 class="card-title mt-3">Web Development</h4>
+                                <p class="card-text mt-3">Through studies and past work experience, I've developed skills with HTML, CSS and JavaScript allowing me to build applications for use via web browsers.
+                                    I'm able to logically plan and design my approach in order to ensure the product is both functional and efficent at its tasks.</p>
+                            </div>
                         </div>
-                      </p>
                     </div>
-                  <!--client picture-->
-                  <!--<div class="testimonials__picture">
-                    <img src="images/testimonials/client-1.jpg" alt="client-1 picture" class="img-fluid rounded-circle">
-                  </div>
-                  <!--client name & role-->
-                  <!--<div class="testimonials__name">
-                    <h3>Autolog Cat</h3>
-                    <p class="fw-light">CEO & Founder</p>
-                  </div>
-                </div>
-                <!--CAROUSEL ITEM 2-->
-                <!--<div class="carousel-item">
-                  <!--testimonials card-->
-                  <!--<div class="testimonials__card">
-                    <p class="lh-lg">
-                      <i class="fas fa-quote-left"></i>
-                      Having an interest in web design and development, I studied HTML & JavaScript during university plus CSS in my own time via freeCodeCamp, YouTube and Udemy courses.
-                      <i class="fas fa-quote-right"></i>
-                      <div class="ratings p-1">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </div>
-                    </p>
-                  </div>
-                <!--client picture-->
-                <!--<div class="testimonials__picture">
-                  <img src="images/testimonials/client-2.jpg" alt="client-2 picture" class="img-fluid rounded-circle">
-                </div>
-                <!--client name & role-->
-                <!--<div class="testimonials__name">
-                  <h3>Paul Walker</h3>
-                  <p class="fw-light">Web Developer</p>
-                </div>
-              </div>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                </button>
-                <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,138.7C560,117,640,107,720,117.3C800,128,880,160,960,170.7C1040,181,1120,171,1200,176C1280,181,1360,203,1400,213.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-        </section-->
 
-        <!--FAQ Section-->
-        <section id="faq" class="faq">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#fff" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,138.7C560,117,640,107,720,117.3C800,128,880,160,960,170.7C1040,181,1120,171,1200,176C1280,181,1360,203,1400,213.3L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
-          </svg>
-          <div class="container">
-            <div class="row text-center text-white">
-              <h1 class="display-3 fw-bold text-capitalize">Qualifications</h1>
-              <div class="heading-line"></div>
-              <p class="lead text-white">Curious about what I studied? Take a look below</p>
-            </div>
-            <!--ACCORDION CONTENT-->
-            <div class="row mt-5">
-              <div class="col-md-12">
-                <div class="accordion" id="accordionExample">
-                  <!--ACCORDION ITEM 1-->
-                  <div class="accordion-item shadow mb-3">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <strong>Computer Science – BSc (Hons) 1.1 (2016-2019)</strong> 
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <h6><strong>University of the West of Scotland</strong></h6>
-                          <ul>
-                            <li>
-                              <strong>2nd Year</strong>: Structures and Algorithms (B2), Computing Project (C), Programming for Mobile Devices (B2), Database Development (B1), Object Orientated Analysis (B1), HTML5 and JavaScript Programming (A3), Programming in Java (C)
-                            </li>
-                            <li>
-                              <strong>3rd Year</strong>: Internet Scripting (A3), Study Project – Computing (A3), Information Security Management (A3), Research Methods in Computing (A3), Project Management for IT (B1), Database Applications (A3), Professional Computing Practice (A1)
-                            </li>
-                            <li>
-                              <strong>4th Year</strong>: Advanced Programming for Mobile Devices (A3), Computing Honours Project (A3), Human Computer Interaction & User Experience Design (A3), Data Warehouse Environment (A3) Collaborative Virtual Environments (B1)
-                            </li>
-                          </ul>
-                      </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="fas servicesIcon fa-layer-group"></i>
+                                <h4 class="card-title mt-3">Salesforce CRM</h4>
+                                <p class="card-text mt-3">Through past work experience and independent studies I've become highly familarised with the Salesforce CRM. Familar with both Classic and Lightning Experience, I'm able to understand concepts vital to ensuring the CRM will work efficently and remain secure while not impacting workflow.</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <!--ACCORDION ITEM 2-->
-                  <div class="accordion-item shadow mb-3">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <strong>Higher National Diploma Computing: Technical Support (2015-2016)</strong>
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>Dumfries and Galloway College</strong>
-                        <ul>
-                          <li>Computing: Technical Support: Graded Unit 2</li>
-                          <li>Network Server Operating Systems</li>
-                          <li>Network Technology and Data Communications</li>
-                          <li>Open Source Operating Systems: Introduction to Command Line Administration</li>
-                          <li>Providing Technical Support to Users</li>
-                          <li>Cloud Computing</li>
-                          <li>Computer Forensics: Fundamentals</li>
-                          <li>Ethical Hacking Fundamentals</li>
-                          <li>Security Concepts</li>
-                          <li>Troubleshooting a Desktop Operating System</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <!--ACCORDION ITEM 3-->
-                  <div class="accordion-item shadow mb-3">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <strong>Higher National Certificate Computing: Technical Support (2014-2015)</strong>
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>Dumfries and Galloway College</strong>
-                        <ul>
-                          <li>Computing: Technical Support: Graded Unit 1</li>
-                          <li>Client Operating Systems</li>
-                          <li>Computer Hardware: Hardware Installation and Maintenance</li>
-                          <li>Computer Networks: Building Local Area Networks</li>
-                          <li>Computer Systems Fundamentals</li>
-                          <li>Developing Software: Introduction</li>
-                          <li>Professionalism and Ethics in Computing</li>
-                          <li>Team Working in Computing</li>
-                          <li>Troubleshooting Computing Problems</li>
-                          <li>Mobile Technology</li>
-                          <li>Computing a Desktop Operating System</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <!--ACCORDION ITEM 4-->
-                  <div class="accordion-item shadow mb-3">
-                    <h2 class="accordion-header" id="headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <strong>EDEXCEL BTEC Level 3 Subsidiary DIP in IT (2012-2013)</strong>
-                      </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>Dumfries and Galloway College</strong>
-                        <ul>
-                          <li>Communication and Employability Skills for IT</li>
-                          <li>Computer Systems</li>
-                          <li>Managing Networks</li>
-                          <li>Computer Networks</li>
-                          <li>IT Technical Support</li>
-                          <li>IT Systems Troubleshooting and Repair</li>
-                          <li>Computer Systems Architecture</li>
-                          <li>CISCO IT Essentials Part 2</li>
-                          <li>Hardware Concepts</li>
-                          <li>Operating System Concepts</li>
-                          <li>Communication</li>
-                          <li>Numeracy</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <!--ACCORDION ITEM 5-->
-                  <div class="accordion-item shadow mb-3">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        <strong>Secondary Education (2004-2010)</strong>
-                      </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>Lockerbie Academy</strong>
-                        <ul>
-                          <li>Higher Art & Design</li>
-                          <li>Intermediate 2 Workworking Skills</li>
-                          <li>Intermediate 1 English</li>
-                          <li>Intermediate 1 Mathematics</li>
-                          <li>Standard Grade Geography</li>
-                          <li>Standard Grade Computing Studies</li>
-                          <li>Standard Grade Graphic Communication</li>
-                          <li>Standard Grade Physics</li>
-                          <li>Standard Grade French</li>
-                        </ul>
-                        <strong>College Modules</strong>
-                        <ul>
-                          <li>Computer Games: Digital Games Design</li>
-                          <li>Web Logs</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,138.7C560,117,640,107,720,117.3C800,128,880,160,960,170.7C1040,181,1120,171,1200,176C1280,181,1360,203,1400,213.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-        </section>
 
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="far servicesIcon fa-check-circle"></i>
+                                <h4 class="card-title mt-3">Technical Support</h4>
+                                <p class="card-text mt-3">Through studies and personal experience, I'm able to diagnose, repair or provide advice on solving both hardware and software problems for desktop computers and laptop devices. This ranges anywhere from performing a hardware upgrade to finding a solution to a software problem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="fas servicesIcon fa-search"></i>
+                                <h4 class="card-title mt-3">Web Design</h4>
+                                <p class="card-text mt-3">Along with developing funcationality, I'm able to consider what it means to make a web product appealing to the user. This will include ensuring the product appears modern and has UI elements in easy to find places while having an overall appealing appearance to catch user attention.</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="fas servicesIcon fa-shield-alt"></i>
+                                <h4 class="card-title mt-3">Salesforce Administration</h4>
+                                <p class="card-text mt-3">Through work experience and studies on Trailhead, I've covered aspects of how to configure and secure a Salesforce org. This can range from inital setup with custom objects, permissions and profiles to building lightning apps/pages and applying automated solutions such as workflow rules and validation.</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <!--Portfolio Section-->
-        <section id="portfolio" class="portfolio">
-          <div class="container">
-            <div class="row text-center mt-5">
-              <h1 class="display-3 fw-bold text-capitalize">Latest work</h1>
-              <div class="heading-line"></div>
-              <p class="lead">
-                Feel free to take a look at some of my previous projects. 
-                </p>
-              </div>
-              <!--FILTER BUTTONS-->
-              <!--<div class="row mt-5 mb-4 g-3 text-center">
-                <div class="col-md-12">
-                  <button class="btn btn-outline-primary" type="button">All</button>
-                  <button class="btn btn-outline-primary" type="button">Websites</button>
-                  <button class="btn btn-outline-primary" type="button">Design</button>
-                  <button class="btn btn-outline-primary" type="button">Mockup</button>
-                </div>
-              </div>-->
-
-              <!--START THE PORTFOLIO ITEMS-->
-              <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <a href="images/portfolio/Honours Report Edited.pdf" type="application/pdf" width="100%" height="600px">
-                  <div class="portfolio-box shadow">
-                    <img src="images/portfolio/project1.jpg" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
-                    <div class="div portfolio-info">
-                      <div class="caption">
-                        <h4>Comparing ASP.NET and Web Builder Development Methods</h4>
-                        <p>University C#/ASP.NET/CSS</p>
-                      </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="fas servicesIcon fa-wrench"></i>
+                                <h4 class="card-title mt-3">Digital Mentor</h4>
+                                <p class="card-text mt-3">Through volunteering and personal experience, I've assisted people with understanding how to use their digital devices through in-person support, video calls and over the phone.
+                                    This can range from device initial setup to helping them install and configure a video application such as Zoom or a banking application.</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  </a>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                  <a href="images/portfolio/APMD Documentation.pdf" type="application/pdf" width="100%" height="600px">
-                  <div class="portfolio-box shadow">
-                    <img src="images/portfolio/project2.jpg" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
-                    <div class="div portfolio-info">
-                      <div class="caption">
-                        <h4>RuneScape Companion App</h4>
-                        <p>University HTML/CSS/JavaScript/jQuery</p>
-                      </div>
-                    </div>
-                  </div>
-                  </a>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <a href="images/portfolio/UX-HCI Report.pdf" type="application/pdf" width="100%" height="600px">
-                  <div class="portfolio-box shadow">
-                    <img src="images/portfolio/project3.jpg" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
-                    <div class="div portfolio-info">
-                      <div class="caption">
-                        <h4>UX/HCI Keyboard Design Project</h4>
-                        <p>University</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <a href="images/portfolio/Collaborative Virtual Environments Presentation.pdf" type="application/pdf" width="100%" height="600px">
-                  <div class="portfolio-box shadow">
-                    <img src="images/portfolio/project4.jpg" alt="portfolio 4 image" title="portfolio 4 picture" class="img-fluid">
-                    <div class="div portfolio-info">
-                      <div class="caption">
-                        <h4>Unity Virtual Environment Project</h4>
-                        <p>University C#/Unity</p>
-                      </div>
-                    </div>
-                  </div>
-                  </a>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="portfolio-box shadow">
-                    <img src="images/portfolio/project5.jpg" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid">
-                    <div class="div portfolio-info">
-                      <div class="caption">
-                        <h4>Personal Portfolio Project</h4>
-                        <p>freeCodeCamp HTML/CSS</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="portfolio-box shadow">
-                    <img src="images/portfolio/project6.jpg" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid">
-                    <div class="div portfolio-info">
-                      <div class="caption">
-                        <h4>Tribute Page</h4>
-                        <p>freeCodeCamp HTML/CSS</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="portfolio-box shadow">
-                    <img src="images/portfolio/project7.jpg" alt="portfolio 7 image" title="portfolio 7 picture" class="img-fluid">
-                    <div class="div portfolio-info">
-                      <div class="caption">
-                        <h4>Survey Form Project</h4>
-                        <p>freeCodeCamp HTML/CSS</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="portfolio-box shadow">
-                    <img src="images/portfolio/project8.jpg" alt="portfolio 8 image" title="portfolio 8 picture" class="img-fluid">
-                    <div class="div portfolio-info">
-                      <div class="caption">
-                        <h4>Technical Documentation Page Project</h4>
-                        <p>freeCodeCamp HTML/CSS</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="portfolio-box shadow">
-                    <img src="images/portfolio/project9.jpg" alt="portfolio 9 image" title="portfolio 9 picture" class="img-fluid">
-                    <div class="div portfolio-info">
-                      <div class="caption">
-                        <h4>Personal Portfolio Project</h4>
-                        <p>WordPress HTML/CSS/PHP</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
         </section>
 
-        <!--Contact Section-->
-        <section id="contact" class="get-started">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#fff" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,138.7C560,117,640,107,720,117.3C800,128,880,160,960,170.7C1040,181,1120,171,1200,176C1280,181,1360,203,1400,213.3L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
-          </svg>
-          <div class="container">
-            <div class="row text-center">
-              <h1 class="display-3 fw-bold text-capitalize">Contact</h1>
-              <div class="heading-line"></div>
-              <p class="lh-lg pb-4">
-                Feel free to contact me via any of the below methods.
-              </p>
-            </div>
-            <!--START THE CTA CONTENT-->
-            <div class="row text-white">
-                  <!--CONTENT FOR THE EMAIL-->
-                  <div class="col-md-6 col-md-6 contact-box pt-1  d-lg-flex d-flex">
-                    <div class="contact-box__icon">
-                      <i class="far fa-envelope"></i>
+        <!-- portfolio section -->
+        <section id="portfolio">
+            <div class="container mt-3">
+                <h1 class="text-center">Portfolio</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top imgAdjustment" src="images/apexproject.JPG" alt="Card Image">
+                            <div class="card-body">
+                                <h4 class="card-title">Report Generator Project</h4>
+                                <p class="card-text">A project based on Salesforce, using HTML, CSS, JavaScript and SOQL Queries.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success" style="visibility:hidden">Link</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-box__info">
-                      <a href="mailto:paulewalker92@gmail.com" class="contact-box__info--title">paulewalker92@gmail.com</a>
-                      <p class="contact-box__info--subtitle">Email</p>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top imgAdjustment" src="images/mfaproject.jpg" alt="Card Image">
+                            <div class="card-body">
+                                <h4 class="card-title">MFA Project</h4>
+                                <p class="card-text">A project based on preparing a company to use and enforce Salesforce MFA.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success" style="visibility:hidden">Link</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-md-6 col-md-6 contact-box pt-1  d-lg-flex d-flex">
-                    <div class="contact-box__icon">
-                      <i class="fab fa-linkedin"></i>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top imgAdjustment" src="images/honoursproject.jpg" alt="Card Image">
+                            <div class="card-body">
+                                <h4 class="card-title">Computer Science Project</h4>
+                                <p class="card-text">A research and development project based around web development methods.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-box__info">
-                      <a href="https://www.linkedin.com/in/paul-walker-33476518a/" class="contact-box__info--title">Paul Walker</a>
-                      <p class="contact-box__info--subtitle">LinkedIn</p>
-                    </div>
-                  </div>
-            <!--START THE CTA CONTENT (backup)-->
-            <!--<div class="row text-white">
-              <div class="col-12 col-lg-6 gradient shadow p-3">
-                <div class="cta-info w-100">
-                  <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
-                  <p class="lh-lg">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, omnis corporis ipsum quam repudiandae itaque nulla dignissimos blanditiis ex inventore maxime voluptatibus perspiciatis accusantium iure labore architecto fugiat vitae? Recusandae.
-                  </p>
-                  <h3 class="diaply-3--brief">
-                    What will be the next step?
-                  </h3>
-                  <ul class="cta-info__list">
-                    <li>We'll prepare the proposal</li>
-                    <li>We'll discuss it together</li>
-                    <li>Let's start the discussion</li>
-                  </ul>
                 </div>
-              </div>
-              <div class="col-12 col-lg-6 bg-white shadow p-3">
-                <div class="form w-100 pb-2">
-                  <h4 class="display-3--title mb-5">Start Your Project</h4>
-                  <form action="#" class="row">
-                    <div class="col-lg-6 col-md-6 mb-3"><input type="text" placeholder="First Name" id="inputFirstName" class="shadow form-control form-control-lg">
-                    
+                <br>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top imgAdjustment" src="images/uciproject.jpg" alt="Card Image">
+                            <div class="card-body">
+                                <h4 class="card-title">UX/HCI Keyboard Design</h4>
+                                <p class="card-text">A project to create a keyboard design able to meet target audiences needs.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 mb-3"><input type="text" placeholder="Last Name" id="inputLastName" class="shadow form-control form-control-lg">
-                    
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top imgAdjustment" src="images/mobileappproject.jpg" alt="Card Image">
+                            <div class="card-body">
+                                <h4 class="card-title">Mobile Application Project</h4>
+                                <p class="card-text">A project based around making a mobile companion app.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-12 mb-3"><input type="email" placeholder="Email address" id="inputEmail" class=" shadow form-control form-control-lg">
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top imgAdjustment" src="images/hndproject.png" alt="Card Image">
+                            <div class="card-body">
+                                <h4 class="card-title">HND Graded Unit 2 Project</h4>
+                                <p class="card-text">A project with the aim of upgrading a company's IT and network infastructure.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-12 mb-3">
-                    <textarea name="message" placeholder="message" id="message" rows="8" class="shadow form-control form-control-lg"></textarea>
-                    </div>
-                    <div class="text-center d-grid mt-1">
-                      <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">
-                        Submit
-                        <i class="fas fa-paper-plane"></i>
-                      </button>
-                    </div>
-                  </form>
                 </div>
-              </div>-->
             </div>
-          </div>
         </section>
 
-        <!--Footer-->
-        <footer class="footer">
-          <div class="container">
-            <div class="row">
-              <!--CONTENT FOR THE MOBILE NUMBER-->
-              <!--<div class="col-md-4 col-md-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-                <div class="contact-box__icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                  <path d="M15 7a2 2 0 0 1 2 2" />
-                  <path d="M15 3a6 6 0 0 1 6 6" />
-                </svg></div>
-                <div class="contact-box__info">
-                  <a href="" class="contact-box__info--title">0123456789</a>
-                  <p class="contact-box__info--subtitle">Mon-Fri 9am-6pm</p>
-                </div>
-              </div>-->
-              <!--CONTENT FOR THE EMAIL-->
-              <!--<div class="col-md-4 col-md-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-                <div class="contact-box__icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                  <polyline points="3 9 12 15 21 9 12 3 3 9" />
-                  <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
-                  <line x1="3" y1="19" x2="9" y2="13" />
-                  <line x1="15" y1="13" x2="21" y2="19" />
-                </svg></div>
-                <div class="contact-box__info">
-                  <a href="" class="contact-box__info--title">info@company.com</a>
-                  <p class="contact-box__info--subtitle">Online Support</p>
-                </div>
-              </div>-->
-              <!--CONTENT FOR LOCATION-->
-              <!--<div class="col-md-4 col-md-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-                <div class="contact-box__icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                  <line x1="18" y1="6" x2="18" y2="6.01" />
-                  <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
-                  <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
-                  <line x1="9" y1="4" x2="9" y2="17" />
-                  <line x1="15" y1="15" x2="15" y2="20" />
-                </svg></div>
-                <div class="contact-box__info">
-                  <a href="" class="contact-box__info--title">Scotland, UK</a>
-                  <p class="contact-box__info--subtitle">DG11 3PW</p>
-                </div>
-              </div>-->
-            </div>
-          </div>
-
-          <!--START THE SOCIAL MEDIA CONTENT-->
-          <div class="footer-sm" style="background-color: #212121;">
+        <!-- eduction section -->
+        <section id="education">
             <div class="container">
-              <div class="row py-4 text-center text-white align-items-center">
-                <div class="col-lg-12 col-md-12 mb-4 mb-md-0">
-                  <p>Want to see more? Take a look at these other services.</p>
-                  <a href="https://github.com/paulewalker92"><i class="fab fa-github"></i></a>
-                  <a href="https://codepen.io/paulw92"><i class="fab fa-codepen"></i></a>
-                </div>
-               
-              </div>
-            </div>
-          </div>
+                <h1 class="text-center">Education</h1>
+                <button class="accordion" style="margin-top: 2rem;"><strong>Computer Science – BSc (Hons) 1.1 (2016-2019)</strong></button>
+                    <div class="panel">
+                        <div class="accordian-body">
+                            <h6 style="padding-top:10px;"><strong>University of the West of Scotland</strong></h6>
+                            <ul>
+                                <li><strong>2nd Year: </strong>
+                                    <ul>
+                                        <li>Structures and Algorithms (B2)</li>
+                                        <li>Computing Project (C)</li>
+                                        <li>Programming for Mobile Devices (B2)</li>
+                                        <li>Database Development (B1)</li>
+                                        <li>Object Orientated Analysis (B1)</li>
+                                        <li>HTML5 and JavaScript Programming (A3)</li>
+                                        <li>Programming in Java (C)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>3rd Year: </strong>
+                                    <ul>
+                                        <li>Internet Scripting (A3)</li>
+                                        <li>Study Project – Computing (A3)</li>
+                                        <li>Information Security Management (A3)</li>
+                                        <li>Research Methods in Computing (A3)</li>
+                                        <li>Project Management for IT (B1)</li>
+                                        <li>Database Applications (A3)</li>
+                                        <li>Professional Computing Practice (A1)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>4th Year: </strong>
+                                    <ul>
+                                        <li>Advanced Programming for Mobile Devices (A3)</li>
+                                        <li>Computing Honours Project (A3)</li>
+                                        <li>Human Computer Interaction & User Experience Design (A3)</li>
+                                        <li>Data Warehouse Environment (A3)</li>
+                                        <li>Collaborative Virtual Environments (B1)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-          <!--START COMPANY INFO CONTENT-->
-          <!--<div class="container mt-5">
-            <div class="row text-white justify-content-center mt-3 pb-3">
-              <div class="col-12 col-sm-6 col-lg-6">
-                <h5 class="text-capitalize bw-bold">
-                  Company Name
-                </h5>
-                <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px">
-                <p class="lh-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque rerum dolores, optio temporibus quae inventore quos voluptates odio sint, commodi suscipit placeat distinctio magni magnam modi iste eos repellat nostrum?
-                </p>
-              </div>
-              <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-                <h5 class="text-capitalize bw-bold">
-                  Products
-                </h5>
-                <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px">
-                <ul class="list-inline company-list">
-                  <li><a href="">lorem ipsum</a></li>
-                  <li><a href="">lorem ipsum</a></li>
-                  <li><a href="">lorem ipsum</a></li>
-                  <li><a href="">lorem ipsum</a></li>
-                </ul>
-              </div>
-              <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-                <h5 class="text-capitalize bw-bold">
-                  Useful links
-                </h5>
-                <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px">
-                <ul class="list-inline company-list">
-                  <li><a href="">Your Account</a></li>
-                  <li><a href="">Become an Affiliate</a></li>
-                  <li><a href="">Create an Account</a></li>
-                  <li><a href="">Help</a></li>
-                </ul>
-              </div>
-              <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-                <h5 class="text-capitalize bw-bold">
-                  Contact
-                </h5>
-                <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px">
-                <ul class="list-inline company-list">
-                  <li><a href="">lorem ipsum</a></li>
-                  <li><a href="">lorem ipsum</a></li>
-                  <li><a href="">lorem ipsum</a></li>
-                  <li><a href="">lorem ipsum</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>-->
+                    <button class="accordion"><strong>Higher National Diploma Computing: Technical Support (2015-2016)</strong></button>
+                    <div class="panel">
+                        <div class="accordian-body">
+                            <h6 style="padding-top:10px"><strong>Dumfries and Galloway College</strong></h6>
+                            <ul>
+                                <li>Computing: Technical Support: Graded Unit 2</li>
+                                <li>Network Server Operating Systems</li>
+                                <li>Network Technology and Data Communications</li>
+                                <li>Open Source Operating Systems: Introduction to Command Line Administration</li>
+                                <li>Providing Technical Support to Users</li>
+                                <li>Cloud Computing</li>
+                                <li>Computer Forensics: Fundamentals</li>
+                                <li>Ethical Hacking Fundamentals</li>
+                                <li>Security Concepts</li>
+                                <li>Troubleshooting a Desktop Operating System</li>
+                            </ul>
+                        </div>
+                    </div>
 
-          <!--START THE COPYRIGHT INFO-->
-          <div class="footer-bottom pt-5 pb-5">
-            <div class="container">
-              <div class="row text-center text-white">
-                <div class="col-12">
-                  <div class="footer-bottom__copyright">
-                    &COPY; Copyright 2021 A personal portfolio website | Created by Paul Walker
-                  </div>
-                </div>
-              </div>
+                    <button class="accordion"><strong>Higher National Certificate Computing: Technical Support (2014-2015)</strong></button>
+                    <div class="panel">
+                        <div class="accordian-body">
+                            <h6 style="padding-top:10px"><strong>Dumfries and Galloway College</strong></h6>
+                            <ul>
+                                <li>Computing: Technical Support: Graded Unit 1</li>
+                                <li>Client Operating Systems</li>
+                                <li>Computer Hardware: Hardware Installation and Maintenance</li>
+                                <li>Computer Networks: Building Local Area Networks</li>
+                                <li>Computer Systems Fundamentals</li>
+                                <li>Developing Software: Introduction</li>
+                                <li>Professionalism and Ethics in Computing</li>
+                                <li>Team Working in Computing</li>
+                                <li>Troubleshooting Computing Problems</li>
+                                <li>Mobile Technology</li>
+                                <li>Computing a Desktop Operating System</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="accordion"><strong>EDEXCEL BTEC Level 3 Subsidiary DIP in IT (2012-2013)</strong></button>
+                    <div class="panel">
+                        <div class="accordian-body">
+                            <h6 style="padding-top:10px"><strong>Dumfries and Galloway College</strong></h6>
+                            <ul>
+                                <li>Communication and Employability Skills for IT</li>
+                                <li>Computer Systems</li>
+                                <li>Managing Networks</li>
+                                <li>Computer Networks</li>
+                                <li>IT Technical Support</li>
+                                <li>IT Systems Troubleshooting and Repair</li>
+                                <li>Computer Systems Architecture</li>
+                                <li>CISCO IT Essentials Part 2</li>
+                                <li>Hardware Concepts</li>
+                                <li>Operating System Concepts</li>
+                                <li>Communication</li>
+                                <li>Numeracy</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="accordion"><strong>Secondary Education (2004-2010)</strong></button>
+                    <div class="panel">
+                        <div class="accordian-body">
+                            <h6 style="padding-top:10px"><strong>Lockerbie Academy</strong></h6>
+                            <ul>
+                                <li>Higher Art & Design</li>
+                                <li>Intermediate 2 Workworking Skills</li>
+                                <li>Intermediate 1 English</li>
+                                <li>Intermediate 1 Mathematics</li>
+                                <li>Standard Grade Geography</li>
+                                <li>Standard Grade Computing Studies</li>
+                                <li>Standard Grade Graphic Communication</li>
+                                <li>Standard Grade Physics</li>
+                                <li>Standard Grade French</li>
+                                <li>Mobile Technology</li>
+                                <li>Computing a Desktop Operating System</li>
+                            </ul>
+                            <br>
+                            <h6 style="padding-top:10px"><strong>College Modules</strong></h6>
+                            <ul>
+                                <li>Computer Games: Digital Games Design</li>
+                                <li>Web Logs</li>
+                            </ul>
+                        </div>
+                    </div>
+
             </div>
-          </div>
+        </section>
+
+        <section id="contact">
+            <div class="container mt-3 contactContainer">
+                <h1 class="text-center">Contact Me</h1>
+                <div class="row" style="text-align: center;background-color: #222222; display: flex; justify-content: center; margin-top: 2rem">
+                    <!--CONTENT FOR THE EMAIL-->
+                    <p class="text-center" style="color:white; margin-top: 20px;">If you're interested in learning more about my skills and what I can potential offer then feel free to contact me via my email provided below. You can also use the link below to view my LinkedIn profile. </p>
+                    <div class="col-sm-6 col-md-6 col-md-6 contact-box pt-1  d-lg-flex d-flex">
+                        <div class="contact-box__icon">
+                            <i class="far fa-envelope" style="font-size:50px; margin-right: 10px; color: white"></i>
+                        </div>
+                        <div class="contact-box__info">
+                            <a href="mailto:paulewalker92@gmail.com" class="contact-box__info--title linkStyles">paulewalker92@gmail.com</a>
+                            <p class="contact-box__info--subtitle" style="color: grey">Email</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-6 col-sm-12 contact-box pt-1  d-lg-flex d-flex">
+                        <div class="contact-box__icon">
+                            <i class="fab fa-linkedin" style="font-size:50px; margin-right: 10px; color: white"></i>
+                        </div>
+                        <div class="contact-box__info">
+                            <a href="https://www.linkedin.com/in/paul-walker-33476518a/" class="contact-box__info--title linkStyles">Paul Walker</a>
+                            <p class="contact-box__info--subtitle" style="color: grey">LinkedIn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section-->
+        <footer id="footer">
+            <div class="container-fluid">
+                <!-- social media icons -->
+                <div class="social-icons mt-4" style="font-size: 15px; color: white;padding: 10px;">
+                    A Personal Portfolio Website | Created by Paul Walker 2023
+                </div>
+            </div>
         </footer>
 
-        <!--BACK TO TOP BUTTON-->
-        <a href="#" class="shadow btn-primary rounded-circle back-to-top">
-          <i class="fas fa-chevron-up"></i>
-        </a>
 
-        <script src="/assets/vendors/js/glightbox.min.js"></script>
-        <script type="text/javascript">
-        const lightbox = GLightbox({
-            'href': 'https://www.youtube.com/watch?v=6wmN7o3MzJc',
-            'type': 'video',
-            'source': 'youtube',
-            'width': 900,
-            'autoPlayVideos': 'true',
-        });
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!-- load javascript after loading all html content -->
+        <script src="script/script.js"></script>
     </body>
 </html>
