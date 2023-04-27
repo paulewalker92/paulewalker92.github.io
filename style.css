@@ -195,12 +195,23 @@ a {
     .contactContainer {
         max-width: 540px;
     }
+    
+}
+
+@media (max-width: 440px){
+    .contactContainer {
+        max-width: 540px;
+    }
+    .card {
+        min-height: 340px;
+    }
 }
 
 @media (min-width: 768px){
     .contactContainer {
         max-width: 720px;
     }
+    
 }
 
 @media (min-width: 992px){
